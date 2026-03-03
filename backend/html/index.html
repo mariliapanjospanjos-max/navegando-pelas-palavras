@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📚 Navengando pelas Palavras - 3º Ano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 Navengando pelas Palavras </h1>
+    </header>
+    
+    <div id="home-screen">
+      <h2 style="text-align: center; font-size: 1.8rem; color: #333; margin-bottom: 25px;">🎯 Escolha seu Módulo</h2>
+      
+      <div class="modules">
+        <div class="module" onclick="startQuiz('alfabeto')">
+          <h2>🔤 Alfabeto</h2>
+          <p>Letras e sons</p>
+        </div>
+        <div class="module sinonimos" onclick="startQuiz('sinonimos')">
+          <h2>🔄 Sinônimos</h2>
+          <p>Palavras parecidas e opostas</p>
+        </div>
+        <div class="module leitura" onclick="startQuiz('leitura')">
+          <h2>📚 Leitura</h2>
+          <p>Compreensão de textos</p>
+        </div>
+      </div>
+      
+      <div style="background: white; border-radius: 20px; padding: 25px; margin-top: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="text-align: center; font-size: 1.5rem; color: #333; margin-bottom: 15px;">✨ Como Funciona</h3>
+        <ol style="text-align: left; padding-left: 20px; color: #555; line-height: 1.8; font-size: 1.1rem;">
+          <li>Escolha um módulo acima</li>
+          <li>Responda 5 questões divertidas</li>
+          <li>⏰ Cronômetro medirá seu tempo</li>
+          <li>Ganhe <strong>serpentinas</strong> a cada acerto! 🎊</li>
+          <li>Veja sua pontuação e tempo no final</li>
+        </ol>
+      </div>
+    </div>
+    
+    <div id="quiz-screen" style="display: none;">
+      <div class="question-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px; background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%); border-radius: 12px; color: white; font-weight: bold; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
+          <div>Questão <span id="current-q">1</span> de <span id="total-q">5</span></div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 1.3rem;">
+            <span>⏱️</span>
+            <span id="timer-display" style="font-family: 'Courier New', monospace; font-weight: bold;">00:00</span>
+          </div>
+        </div>
+        
+        <div class="progress">
+          <div class="progress-fill" id="progress-bar"></div>
+        </div>
+        
+        <div class="question-text" id="question-text">Carregando...</div>
+        
+        <div class="options" id="options-container">
+          <!-- Outras opções poderão inseridas aqui -->
+        </div>
+      </div>
+      
+      <div class="buttons">
+        <button class="btn secondary" onclick="goHome()">← Voltar</button>
+        <button class="btn" id="next-btn" onclick="nextQuestion()" disabled>Próxima →</button>
+      </div>
+    </div>
+    
+    <div id="results-screen" style="display: none;">
+      <div class="results">
+        <div class="stars" id="stars">⭐⭐⭐⭐⭐</div>
+        <div class="message" id="result-message">🌟 Excelente! Você arrasou!</div>
+        <div class="score-big" id="final-score">100%</div>
+        
+        <!-- Nova Seção: Tempo -->
+        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border: 3px solid #2196F3; border-radius: 20px; padding: 25px; margin: 25px 0; text-align: center; box-shadow: 0 6px 15px rgba(33, 150, 243, 0.3);">
+          <div style="font-size: 1.6rem; color: #0d47a1; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <span>⏱️</span>
+            <span>Tempo Total</span>
+          </div>
+          <div style="font-size: 3.2rem; font-weight: bold; color: #FF6B35; font-family: 'Comic Sans MS', cursive; letter-spacing: 2px;" id="time-taken">0 segundos</div>
+          <div style="color: #1565c0; font-size: 1.1rem; margin-top: 8px; font-weight: 500;">
+            (Tempo para responder as 5 questões)
+          </div>
+        </div>
+        
+        <p style="font-size: 1.3rem; color: #555; margin: 15px 0;">
+          Você acertou <span id="correct-count">5</span> de <span id="total-count">5</span> questões
+        </p>
+        
+        <div style="margin-top: 30px;">
+          <input type="text" id="student-name" placeholder="Digite seu nome..." style="width: 100%; padding: 16px; border: 3px solid #e9ecef; border-radius: 15px; font-size: 1.2rem; text-align: center; margin-bottom: 20px;">
+          <button class="btn" style="width: 100%;" onclick="saveAndRestart()">Salvar e Jogar Novamente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

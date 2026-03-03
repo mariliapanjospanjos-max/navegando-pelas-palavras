@@ -1,0 +1,295 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual letra vem DEPOIS do B?",
+      "options": [
+        "A",
+        "C",
+        "D",
+        "Z"
+      ],
+      "correctAnswer": 1,
+      "module": "alfabeto",
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "question": "Qual palavra começa com M?",
+      "options": [
+        "Casa",
+        "Mesa",
+        "Porta",
+        "Janela"
+      ],
+      "correctAnswer": 1,
+      "module": "alfabeto",
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "question": "Qual é a PRIMEIRA letra do alfabeto?",
+      "options": [
+        "B",
+        "Z",
+        "A",
+        "C"
+      ],
+      "correctAnswer": 2,
+      "module": "alfabeto",
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "question": "Quantas letras tem a palavra \"PAI\"?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": 1,
+      "module": "alfabeto",
+      "difficulty": "easy"
+    },
+    {
+      "id": 5,
+      "question": "Qual letra está no final de \"CACHORRO\"?",
+      "options": [
+        "C",
+        "H",
+        "R",
+        "O"
+      ],
+      "correctAnswer": 3,
+      "module": "alfabeto",
+      "difficulty": "easy"
+    },
+    {
+      "id": 6,
+      "question": "Qual é o SINÔNIMO de FELIZ?",
+      "options": [
+        "Triste",
+        "Alegre",
+        "Bravo",
+        "Cansado"
+      ],
+      "correctAnswer": 1,
+      "module": "sinonimos",
+      "difficulty": "easy"
+    },
+    {
+      "id": 7,
+      "question": "Qual é o ANTÔNIMO de GRANDE?",
+      "options": [
+        "Enorme",
+        "Pequeno",
+        "Alto",
+        "Longo"
+      ],
+      "correctAnswer": 1,
+      "module": "sinonimos",
+      "difficulty": "easy"
+    },
+    {
+      "id": 8,
+      "question": "Sinônimo de BONITO:",
+      "options": [
+        "Feio",
+        "Lindo",
+        "Triste",
+        "Velho"
+      ],
+      "correctAnswer": 1,
+      "module": "sinonimos",
+      "difficulty": "easy"
+    },
+    {
+      "id": 9,
+      "question": "Antônimo de RÁPIDO:",
+      "options": [
+        "Devagar",
+        "Veloz",
+        "Ágil",
+        "Ligeiro"
+      ],
+      "correctAnswer": 0,
+      "module": "sinonimos",
+      "difficulty": "easy"
+    },
+    {
+      "id": 10,
+      "question": "\"Contente\" é sinônimo de:",
+      "options": [
+        "Triste",
+        "Feliz",
+        "Bravo",
+        "Assustado"
+      ],
+      "correctAnswer": 1,
+      "module": "sinonimos",
+      "difficulty": "medium"
+    },
+    {
+      "id": 11,
+      "question": "\"O gato mia e o cachorro late.\" Quem late?",
+      "options": [
+        "O gato",
+        "O cachorro",
+        "Os dois",
+        "Nenhum"
+      ],
+      "correctAnswer": 1,
+      "module": "leitura",
+      "difficulty": "easy"
+    },
+    {
+      "id": 12,
+      "question": "\"Maria tem uma bola vermelha.\" Qual a cor da bola?",
+      "options": [
+        "Azul",
+        "Verde",
+        "Vermelha",
+        "Amarela"
+      ],
+      "correctAnswer": 2,
+      "module": "leitura",
+      "difficulty": "easy"
+    },
+    {
+      "id": 13,
+      "question": "\"O sol nasce de manhã.\" Quando o sol nasce?",
+      "options": [
+        "De noite",
+        "De tarde",
+        "De manhã",
+        "À noitinha"
+      ],
+      "correctAnswer": 2,
+      "module": "leitura",
+      "difficulty": "easy"
+    },
+    {
+      "id": 14,
+      "question": "\"João comeu uma maçã.\" O que João comeu?",
+      "options": [
+        "Uma banana",
+        "Uma maçã",
+        "Um pão",
+        "Um biscoito"
+      ],
+      "correctAnswer": 1,
+      "module": "leitura",
+      "difficulty": "easy"
+    },
+    {
+      "id": 15,
+      "question": "\"A menina foi à escola de ônibus.\" Como ela foi à escola?",
+      "options": [
+        "De carro",
+        "A pé",
+        "De ônibus",
+        "De bicicleta"
+      ],
+      "correctAnswer": 2,
+      "module": "leitura",
+      "difficulty": "easy"
+    }
+  ],
+  "scores": [
+    {
+      "name": "Rosana",
+      "module": "alfabeto",
+      "score": 5,
+      "total": 5,
+      "id": 1
+    },
+    {
+      "name": "Rosana",
+      "module": "sinonimos",
+      "score": 1,
+      "total": 5,
+      "id": 2
+    },
+    {
+      "name": "Rosana",
+      "module": "alfabeto",
+      "score": 5,
+      "total": 5,
+      "time": 32001,
+      "id": 3
+    },
+    {
+      "name": "Rosana",
+      "module": "sinonimos",
+      "score": 0,
+      "total": 5,
+      "time": 29006,
+      "id": 4
+    },
+    {
+      "name": "Rosana",
+      "module": "leitura",
+      "score": 3,
+      "total": 5,
+      "time": 30004,
+      "id": 5
+    },
+    {
+      "name": "Rosana",
+      "module": "alfabeto",
+      "score": 2,
+      "total": 5,
+      "time": 22005,
+      "id": 6
+    },
+    {
+      "name": "Rosana",
+      "module": "sinonimos",
+      "score": 3,
+      "total": 5,
+      "time": 34002,
+      "id": 7
+    },
+    {
+      "name": "Rosana",
+      "module": "leitura",
+      "score": 5,
+      "total": 5,
+      "time": 32016,
+      "id": 8
+    },
+    {
+      "name": "Rosana",
+      "module": "alfabeto",
+      "score": 5,
+      "total": 5,
+      "time": 44002,
+      "id": 9
+    },
+    {
+      "name": "Rosana",
+      "module": "sinonimos",
+      "score": 0,
+      "total": 5,
+      "time": 37002,
+      "id": 10
+    },
+    {
+      "name": "Rosana",
+      "module": "leitura",
+      "score": 3,
+      "total": 5,
+      "time": 37002,
+      "id": 11
+    },
+    {
+      "name": "Aluno",
+      "module": "sinonimos",
+      "score": 2,
+      "total": 5,
+      "time": 19007,
+      "id": 12
+    }
+  ]
+}
