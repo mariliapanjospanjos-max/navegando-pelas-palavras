@@ -70,9 +70,8 @@ async function startQuiz(module) {
 
   try {
     const response = await fetch(
-      const response = await fetch(
-    `https://navegando-pelas-palavras.onrender.com/api/questions?module=${module}`
-);
+      `https://navegando-pelas-palavras.onrender.com/api/questions?module=${module}`,
+    );
     const allQuestions = await response.json();
     questions = allQuestions.slice(0, 5);
 
