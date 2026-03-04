@@ -8,7 +8,12 @@ const middlewares = jsonServer.defaults();
 // Configuração de CORS simples
 app.use(
   cors({
-    origin: ["http://127.0.0.1:5500", "http://localhost:5500"],
+    origin: [
+      "http://127.0.0.1:5500",
+      "http://localhost:5500",
+      "https://navegando-pelas-palavras.onrender.com",
+      "*",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
@@ -38,7 +43,7 @@ app.use((req, res, next) => {
 // Usar roteador JSON Server
 app.use("/api", router);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log("\n🚀 ====================================");
   console.log(`🚀 Backend rodando na porta ${PORT}`);

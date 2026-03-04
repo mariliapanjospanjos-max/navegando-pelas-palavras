@@ -70,7 +70,7 @@ async function startQuiz(module) {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/questions?module=${module}`,
+      ``https://navegando-pelas-palavras.onrender.com/api/questions?module=${module}``,
     );
     const allQuestions = await response.json();
     questions = allQuestions.slice(0, 5);
@@ -336,7 +336,7 @@ function saveAndRestart() {
   const name = document.getElementById("student-name").value.trim() || "Aluno";
 
   // Enviar para backend com tempo
-  fetch("http://localhost:5000/api/scores", {
+  fetch("https://navegando-pelas-palavras.onrender.com/api/scores", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
