@@ -1,4 +1,4 @@
-# Navegando pelas palavras
+# Navegando pelas palavras.
 
 ## Quiz de Português - 3º Ano
 
@@ -17,19 +17,19 @@
 ### Módulos Disponíveis
 
 1. **🔤 Alfabeto Mágico**
-   - Letras e seus sons
-   - Ordem alfabética
-   - Formação de palavras
+   - Letras e seus sons.
+   - Ordem alfabética.
+   - Formação de palavras.
 
 2. **🔄 Sinônimos e Antônimos**
-   - Palavras parecidas (sinônimos)
-   - Palavras opostas (antônimos)
-   - Ampliação de vocabulário
+   - Palavras parecidas (sinônimos).
+   - Palavras opostas (antônimos).
+   - Ampliação do vocabulário..
 
 3. **📚 Leitura e Compreensão**
-   - Interpretação de textos curtos
-   - Compreensão de contexto
-   - Identificação de informações principais
+   - Interpretação de textos curtos.
+   - Compreensão de contexto.
+   - Identificação de informações principais.
 
 ### Requisitos Univesp Atendidos
 
