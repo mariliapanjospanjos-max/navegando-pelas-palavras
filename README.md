@@ -24,7 +24,7 @@
 2. **🔄 Sinônimos e Antônimos**
    - Palavras parecidas (sinônimos).
    - Palavras opostas (antônimos).
-   - Ampliação de vocabulário.
+   - Ampliação do vocabulário.
 
 3. **📚 Leitura e Compreensão**
    - Interpretação de textos curtos.
