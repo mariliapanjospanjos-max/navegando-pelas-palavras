@@ -16,6 +16,30 @@ const soundWrong = new Audio("audio/erro.mp3");
 const soundAlegria = new Audio("audio/alegria.mp3");
 const soundLamento = new Audio("audio/lamento.mp3");
 
+// 🎯 FORÇAR TAMANHOS DAS FONTES - Função global
+function aplicarTamanhosFontes() {
+  // Número da questão: "Questão 1 de 5"
+  const quizHeader = document.querySelector(".quiz-header h3");
+  if (quizHeader) {
+    quizHeader.style.fontSize = "2.5rem";
+    quizHeader.style.fontWeight = "bold";
+  }
+
+  // Enunciado da pergunta: "Qual letra vem DEPOIS do B?"
+  const questionText = document.getElementById("question-text");
+  if (questionText) {
+    questionText.style.fontSize = "2.5rem";
+    questionText.style.fontWeight = "bold";
+    questionText.style.lineHeight = "1.3";
+  }
+
+  // Opções de resposta: tamanho proporcional
+  const options = document.querySelectorAll(".option");
+  options.forEach((opt) => {
+    opt.style.fontSize = "1.8rem";
+  });
+}
+
 // Iniciar cronômetro
 function startTimer() {
   startTime = Date.now();
@@ -112,6 +136,21 @@ function loadQuestion() {
   document.getElementById("total-q").textContent = questions.length;
   document.getElementById("question-text").textContent = question.question;
 
+  // 🎯 FORÇAR TAMANHO DO ENUNCIADO
+  const questionText = document.getElementById("question-text");
+  if (questionText) {
+    questionText.style.fontSize = "2.5rem";
+    questionText.style.fontWeight = "bold";
+    questionText.style.lineHeight = "1.3";
+  }
+
+  // 🎯 FORÇAR TAMANHO DO NÚMERO DA QUESTÃO
+  const quizHeader = document.querySelector(".quiz-header h3");
+  if (quizHeader) {
+    quizHeader.style.fontSize = "2.5rem";
+    quizHeader.style.fontWeight = "bold";
+  }
+
   // Calcular progresso
   const progress = Math.round((currentQuestionIndex / questions.length) * 100);
   document.getElementById("progress-bar").style.width = `${progress}%`;
@@ -127,6 +166,10 @@ function loadQuestion() {
     div.textContent = option;
     div.dataset.index = index;
     div.onclick = () => answerQuestion(index);
+
+    // 🎯 FORÇAR TAMANHO DAS OPÇÕES
+    div.style.fontSize = "1.8rem";
+
     container.appendChild(div);
   });
 
@@ -344,7 +387,7 @@ function saveAndRestart() {
       module: currentModule,
       score,
       total: questions.length,
-      time: totalTime, // Incluir tempo no salvamento
+      time: totalTime,
     }),
   }).catch((err) => console.log("Erro ao salvar:", err));
 
@@ -365,6 +408,19 @@ function goHome() {
   score = 0;
   stopTimer();
 }
+
+// 🎯 FORÇAR FONTES QUANDO A PÁGINA CARREGAR
+document.addEventListener("DOMContentLoaded", function () {
+  // Observar mudanças no DOM e aplicar estilos sempre
+  const observer = new MutationObserver(function () {
+    aplicarTamanhosFontes();
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  // Aplicar uma vez inicial
+  setTimeout(aplicarTamanhosFontes, 500);
+});
 
 // Mensagem de início
 setTimeout(() => {

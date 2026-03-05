@@ -56,7 +56,7 @@ header {
 
 h1 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ h1 {
 
 #home-screen h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #333;
   margin-bottom: 25px;
   display: flex;
@@ -100,7 +100,7 @@ h1 {
 }
 
 .module h2 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
   color: white;
   display: flex;
@@ -111,7 +111,7 @@ h1 {
 }
 
 .module p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -142,7 +142,7 @@ h1 {
   color: white;
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -150,7 +150,7 @@ h1 {
   padding-left: 25px;
   line-height: 2.2;
   color: rgba(255, 255, 255, 0.95);
-  font-size: 1.05rem;
+  font-size: 1.4rem;
 }
 
 .how-it-works li {
@@ -168,7 +168,7 @@ h1 {
 .quiz-header {
   background: linear-gradient(to right, #f5af19, #f12711);
   border-radius: 10px;
-  padding: 15px 25px;
+  padding: 20px 30px;
   margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
@@ -178,45 +178,48 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 🎯 QUESTÃO 1 DE 5 - BEM GRANDE! */
 .quiz-header h3 {
-  font-size: 1.3rem;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 3.5rem !important;
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
 .timer {
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 8px 15px;
+  padding: 10px 20px;
   border-radius: 20px;
-  font-size: 1.1rem;
+  font-size: 2rem !important;
 }
 
+/* 🎯 PERGUNTA/ENUNCIADO - BEM GRANDE! */
 .question {
-  font-size: 1.4rem;
-  color: #2c3e50;
-  margin-bottom: 25px;
-  font-weight: bold;
-  line-height: 1.4;
+  font-size: 3.5rem !important;
+  color: #2c3e50 !important;
+  margin-bottom: 25px !important;
+  font-weight: bold !important;
+  line-height: 1.4 !important;
 }
 
 .options {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
   margin-bottom: 25px;
 }
 
+/* 🎯 OPÇÕES DE RESPOSTA - NORMAIS (não aumentar!) */
 .option {
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   border: 3px solid transparent;
   border-radius: 12px;
-  padding: 15px 20px;
+  padding: 15px 20px !important;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 1.1rem;
-  color: #2c3e50;
-  font-weight: 600;
-  text-align: left;
+  font-size: 1.5rem !important; /* PEQUENO - não mudar! */
+  color: #2c3e50 !important;
+  font-weight: 600 !important;
+  text-align: left !important;
 }
 
 .option:hover {
@@ -224,30 +227,29 @@ h1 {
   border-color: #667eea;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  color: white !important;
 }
 
 .option.selected {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-color: #764ba2;
-  color: white;
+  color: white !important;
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
 }
 
 .option.correct {
   background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
   border-color: #38ef7d;
-  color: white;
+  color: white !important;
 }
 
 .option.wrong {
   background: linear-gradient(135deg, #f5af19 0%, #f12711 100%);
   border-color: #f12711;
-  color: white;
+  color: white !important;
 }
 
-/* ========== BOTÕES COLORIDOS E CENTRALIZADOS ========== */
-/* ========== BOTÕES COLORIDOS E CENTRALIZADOS ========== */
+/* ========== BOTÕES ========== */
 .quiz-buttons {
   display: flex !important;
   gap: 25px !important;
@@ -258,9 +260,9 @@ h1 {
 .btn {
   color: white !important;
   border: none !important;
-  padding: 15px 45px !important;
+  padding: 18px 50px !important;
   border-radius: 30px !important;
-  font-size: 1.1rem !important;
+  font-size: 1.6rem !important;
   cursor: pointer !important;
   transition: all 0.3s ease !important;
   font-weight: bold !important;
@@ -305,7 +307,7 @@ h1 {
 }
 
 .result-container h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #2c3e50;
   margin-bottom: 20px;
 }
@@ -319,14 +321,14 @@ h1 {
 }
 
 .result-stats p {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   margin: 15px 0;
   color: white;
   font-weight: bold;
 }
 
 .celebration {
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 20px 0;
 }
 
@@ -337,7 +339,7 @@ h1 {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .modules {
@@ -354,8 +356,16 @@ h1 {
     text-align: center;
   }
 
+  .quiz-header h3 {
+    font-size: 2.5rem !important;
+  }
+
   .question {
-    font-size: 1.2rem;
+    font-size: 2.5rem !important;
+  }
+
+  .option {
+    font-size: 1.3rem !important;
   }
 
   .quiz-buttons {
@@ -363,6 +373,7 @@ h1 {
   }
 
   .btn {
+    font-size: 1.4rem !important;
     width: 100%;
   }
 }
