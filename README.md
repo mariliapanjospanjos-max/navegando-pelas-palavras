@@ -27,7 +27,7 @@ Objetivos educacionais
    - Palavras opostas (antônimos).
    - Ampliação do vocabulário..
 
-3.  Leitura e compreensão
+3.  Leitura e compreensão de texto
    - Interpretação de textos curtos.
    - Compreensão de contexto.
    - Identificação de informações principais.
